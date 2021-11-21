@@ -224,7 +224,7 @@ youtube: function(args, contents, preview) { //todo: use contents?
 //=====================
 // nodes with children
 root: function() {
-	var node = document.createDocumentFragment()
+	var node = document.createElement('div')
 	return {node:node}
 },
 bold: creator('b'),
@@ -409,7 +409,7 @@ spoiler: function(args) {
 	var box = document.createElement('div')
 	box.className = "spoiler"
 
-	var node = document.createDocumentFragment()
+	var node = document.createElement('div')
 	node.appendChild(button)
 	node.appendChild(box)
 	
